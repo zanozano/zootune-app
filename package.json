@@ -1,0 +1,23 @@
+{
+  "name": "zootune-app",
+  "version": "1.0.0",
+  "description": "Immerse yourself in the enchanting world of Zootune, where the vibrant melodies of diverse animals come to life. Explore a symphony of sounds, discover the unique tunes of each creature, and create your own harmonious playlist. Zootune App is your musical safari through the animal kingdom, blending education and entertainment in a delightful auditory experience.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "scss": "node-sass public/assets/scss/style.scss public/assets/css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zanozano/zootune-app.git"
+  },
+  "author": "Cristobal Manzano",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zanozano/zootune-app/issues"
+  },
+  "homepage": "https://github.com/zanozano/zootune-app#readme",
+  "dependencies": {
+    "node-sass": "^9.0.0"
+  }
+}
