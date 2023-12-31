@@ -1,5 +1,5 @@
 let animales = (() => {
-	const url = 'http://localhost:5500/animales.json';
+	const url = 'http://localhost:5500/animals.json';
 	const getData = async () => {
 		const res = await fetch(url);
 		const data = await res.json();
@@ -7,5 +7,5 @@ let animales = (() => {
 	};
 	return { getData };
 })();
-// EXPORT LET ANIMALES
+
 export default animales;
