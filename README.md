@@ -1,6 +1,6 @@
 # Zootune App
 
-![Zootune App](/assets/imgs/favicon.svg)
+![Zootune App](/public/assets/imgs/favicon.svg)
 
 ## Description
 
