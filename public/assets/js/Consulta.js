@@ -1,11 +1,29 @@
-let animals = (() => {
-	const url = 'http://localhost:5500/animals.json';
-	const getData = async () => {
-		const res = await fetch(url);
-		const data = await res.json();
-		return data;
-	};
-	return { getData };
-})();
+const animals = [
+	{
+		name: "Lion",
+		imagen: "../assets/imgs/Leon.webp",
+		sonido: "../assets/sounds/Rugido.mp3"
+	},
+	{
+		name: "Wolf",
+		imagen: "../assets/imgs/Lobo.webp",
+		sonido: "../assets/sounds/Aullido.mp3"
+	},
+	{
+		name: "Bear",
+		imagen: "../assets/imgs/Oso.webp",
+		sonido: "../assets/sounds/Gruñido.mp3"
+	},
+	{
+		name: "Snake",
+		imagen: "../assets/imgs/Serpiente.webp",
+		sonido: "../assets/sounds/Siseo.mp3"
+	},
+	{
+		name: "Eagle",
+		imagen: "../assets/imgs/Aguila.webp",
+		sonido: "../assets/sounds/Chillido.mp3"
+	}
+];
 
 export default animals;
