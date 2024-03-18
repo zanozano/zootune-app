@@ -1,21 +1,21 @@
 //IMPORT CONSULTA.JS
-import Animales from './Consulta.js';
-//CLICK
+import Animals from './Consulta.js';
+
 document.getElementById('animal').addEventListener('click', async () => {
 	const aSelected = document.getElementById('animal');
 	if (
-		aSelected.value == 'Leon' ||
-		aSelected.value == 'Lobo' ||
-		aSelected.value == 'Oso' ||
-		aSelected.value == 'Serpiente' ||
-		aSelected.value == 'Aguila'
+		aSelected.value == 'Lion' ||
+		aSelected.value == 'Wolf' ||
+		aSelected.value == 'Bear' ||
+		aSelected.value == 'Snake' ||
+		aSelected.value == 'Eagle '
 	) {
 		//CONSULTA JSON
-		const { animales } = await Animales.getData();
+		const { animals } = await Animals.getData();
 		//
 		const animal = document.getElementById('animal').value;
 		//IMG ANIMAL
-		const imgAnimal = animales.find((element) => element.name == animal).imagen;
+		const imgAnimal = animals.find((element) => element.name == animal).imagen;
 		//SET IMG
 		document.getElementById(
 			'preview'
