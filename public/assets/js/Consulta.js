@@ -1,5 +1,5 @@
 let animals = (() => {
-	const url = '../data/animals.json';
+	const url = 'https://raw.githubusercontent.com/zanozano/animals-json/master/animals.json';
 	const getData = async () => {
 		const res = await fetch(url);
 		const data = await res.json();
