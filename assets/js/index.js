@@ -11,18 +11,18 @@ document.getElementById('btnRegistrar').addEventListener('click', () => {
 	let imgSrc = imageSrcBg.slice(5, imageSrcBg.length - 2);
 
 	let newAnimal;
-
 	if (nombre.value == 'Lion') {
-		newAnimal = new Lion(nombre.value, edad.value, imgSrc, comentarios.value);
+		newAnimal = new Lion(nombre.value, edad.value, imgSrc, comentarios.value,);
 	} else if (nombre.value == 'Wolf') {
-		newAnimal = new Wolf(nombre.value, edad.value, imgSrc, comentarios.value);
+		newAnimal = new Wolf(nombre.value, edad.value, imgSrc, comentarios.value,);
 	} else if (nombre.value == 'Bear') {
-		newAnimal = new Bear(nombre.value, edad.value, imgSrc, comentarios.value);
+		newAnimal = new Bear(nombre.value, edad.value, imgSrc, comentarios.value,);
 	} else if (nombre.value == 'Snake') {
-		newAnimal = new Snake(nombre.value, edad.value, imgSrc, comentarios.value);
+		newAnimal = new Snake(nombre.value, edad.value, imgSrc, comentarios.value,);
 	} else if (nombre.value == 'Eagle') {
-		newAnimal = new Eagle(nombre.value, edad.value, imgSrc, comentarios.value);
+		newAnimal = new Eagle(nombre.value, edad.value, imgSrc, comentarios.value,);
 	}
+
 
 	if (nombre.value != 0 && edad.selectedIndex != 0 && imgSrc && comentarios.value) {
 		zoo.push(newAnimal);
@@ -50,6 +50,7 @@ document.getElementById('btnRegistrar').addEventListener('click', () => {
 			icon: "success",
 			title: "Animal added successfully"
 		});
+		console.log(zoo)
 		previewElement.style.backgroundImage = '';
 	} else {
 		Swal.fire({
@@ -74,21 +75,19 @@ const reloadTable = () => {
                                   		</div>
                                   `;
 	});
+
 	//MODAL ANIMAL
 	zoo.forEach((a, i) => {
 		document.getElementById(`${i}-animal`).addEventListener('click', () => {
 			const animalCard = document.getElementById('animal-modal');
 			animalCard.innerHTML = `
-								<div id="${i}-animal" class="pb-2 animal" data-animal="${a.getNombre()}">
+								<div id="${i}-animal" class="animal-modal" data-animal="${a.getNombre()}">
                                   <img src="${a.getImg()}" width="200" class="card-img-top img-fluid"/>
                                   
-								  <div class="">
+								 
                                   <h4 class="text-center">${a.getNombre()}</h4>
-                                  <hr class="w-50 mx-auto">
                                   <h6 class="text-center">Age: ${a.getEdad()}</h6>
                                   <h6 class="text-center">Comments:<br> ${a.getComentarios()}</h6>
-                                  </div>
-                                
                             </div>
                             `;
 		});

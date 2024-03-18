@@ -184,7 +184,16 @@ main {
 
 }
 
+.animal-modal {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    color: var(--primary);
 
+    img {
+        border-radius: 0.5rem;
+    }
+}
 
 
 #Form {
