@@ -8,7 +8,7 @@ document.getElementById('animal').addEventListener('click', async () => {
 		aSelected.value == 'Wolf' ||
 		aSelected.value == 'Bear' ||
 		aSelected.value == 'Snake' ||
-		aSelected.value == 'Eagle '
+		aSelected.value == 'Eagle'
 	) {
 		//CONSULTA JSON
 		const { animals } = await Animals.getData();

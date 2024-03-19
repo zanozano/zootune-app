@@ -1,0 +1,42 @@
+[debug] [2024-03-18T15:55:45.507Z] ----------------------------------------------------------------------
+[debug] [2024-03-18T15:55:45.510Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\zano\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2024-03-18T15:55:45.511Z] CLI Version:   13.5.1
+[debug] [2024-03-18T15:55:45.511Z] Platform:      win32
+[debug] [2024-03-18T15:55:45.511Z] Node Version:  v20.10.0
+[debug] [2024-03-18T15:55:45.511Z] Time:          Mon Mar 18 2024 22:55:45 GMT+0700 (hora de Indochina)
+[debug] [2024-03-18T15:55:45.511Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-03-18T15:55:45.588Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-03-18T15:55:45.589Z] > authorizing via signed-in user (zanozanozano@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  D:\Design 2024\Web\__Updated\zootune-app
+
+Before we get started, keep in mind:
+
+  * You are initializing within an existing Firebase project directory
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2024-03-18T15:55:48.115Z] Using project from CLI flag: zootune-app
+[debug] [2024-03-18T15:55:48.117Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/zootune-app [none]
+[debug] [2024-03-18T15:55:48.566Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/zootune-app 200
+[debug] [2024-03-18T15:55:48.567Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/zootune-app {"projectId":"zootune-app","projectNumber":"531925536401","displayName":"zootune-app","name":"projects/zootune-app","resources":{"hostingSite":"zootune-app"},"state":"ACTIVE","etag":"1_a5e9547d-a699-4719-b066-079b7eb91cec"}
+[info] i  Using project zootune-app (zootune-app) 
+[info] 
+=== Hosting Setup
+[debug] [2024-03-18T15:55:48.572Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/zootune-app [none]
+[debug] [2024-03-18T15:55:48.875Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/zootune-app 200
+[debug] [2024-03-18T15:55:48.876Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/zootune-app {"projectId":"zootune-app","projectNumber":"531925536401","displayName":"zootune-app","name":"projects/zootune-app","resources":{"hostingSite":"zootune-app"},"state":"ACTIVE","etag":"1_a5e9547d-a699-4719-b066-079b7eb91cec"}
